@@ -1,0 +1,123 @@
+:root {
+  --grad-color: linear-gradient(135deg, #43cbff 0%, #9708cc 100%);
+  --mainColor: #8d34ff;
+}
+
+body {
+  font-family: "Tajawal", sans-serif;
+  direction: rtl;
+}
+
+.logo {
+  width: 70px;
+}
+
+.btn {
+  background-image: var(--grad-color);
+}
+
+@media (max-width: 1040px) {
+  .nav p,
+  .lang,
+  .header-left {
+    display: none;
+  }
+  .bars {
+    display: block;
+  }
+  .main-links .container {
+    flex-direction: column;
+  }
+}
+
+form div {
+  position: relative;
+}
+form div i {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.main-links ul li {
+  padding: 0.5rem 1rem;
+}
+
+.landing,
+.navlanding {
+  /* background: var(--grad-color); */
+  background-image: url('./assets/bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  height: 500px;
+  position: relative;
+}
+
+.selects span {
+  padding: 5px 10px;
+  border-radius: 15px;
+}
+
+.search-bar {
+  position: relative;
+  color: #000;
+}
+
+.search-bar i {
+  color: #9ba0c5;
+}
+
+.slider {
+  position: relative;
+}
+
+.slider-text h1 {
+  line-height: 1.9;
+}
+
+.slider-text h1 span {
+  font-weight: bold;
+}
+
+.slider-points {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  display: flex;
+  gap: 10px;
+}
+
+.slider-points span {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #999;
+  cursor: pointer;
+}
+
+.slider-points span.active {
+  background-color: var(--mainColor);
+}
+
+.products,
+.footer-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.footer-content div span {
+  text-decoration: underline;
+  color: #a3a3a3;
+}
+
+.footer-content ul {
+  list-style: disc;
+  color: #fff;
+}
+
+.footer-content ul li {
+  padding: 4px 8px;
+}
